@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus Salud Integral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plus Salud Integral</h1>
+        <p>Ayudamos a personas con depresión a través de acompañamiento profesional y personalizado.</p>
+    </header>
+
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>En <strong>Plus Salud Integral</strong>, entendemos lo difícil que puede ser lidiar con la depresión. Por eso, ofrecemos un espacio seguro y de apoyo para ayudarte a superar este desafío. Nuestro equipo de profesionales está aquí para acompañarte en cada paso del camino.</p>
+    </section>
+
+    <section id="test-depresion">
+        <h2>Test de Depresión</h2>
+        <p>Responde las siguientes preguntas con sinceridad. Este test te ayudará a entender mejor cómo te sientes.</p>
+        <form id="form-depresion">
+            <!-- Preguntas del 1 al 20 -->
+            <div class="pregunta">
+                <p>1. ¿Te sientes triste o vacío la mayor parte del tiempo?</p>
+                <label><input type="radio" name="p1" value="0"> Nunca</label>
+                <label><input type="radio" name="p1" value="1"> A veces</label>
+                <label><input type="radio" name="p1" value="2"> Casi siempre</label>
+            </div>
+            <div class="pregunta">
+                <p>2. ¿Has perdido interés en actividades que antes disfrutabas?</p>
+                <label><input type="radio" name="p2" value="0"> Nunca</label>
+                <label><input type="radio" name="p2" value="1"> A veces</label>
+                <label><input type="radio" name="p2" value="2"> Casi siempre</label>
+            </div>
+            <!-- Continuar con las preguntas 3 a 19 -->
+            <div class="pregunta">
+                <p>20. ¿Has tenido pensamientos de autolesión o suicidio?</p>
+                <label><input type="radio" name="p20" value="0"> Nunca</label>
+                <label><input type="radio" name="p20" value="1"> A veces</label>
+                <label><input type="radio" name="p20" value="2"> Casi siempre</label>
+            </div>
+            <button type="button" onclick="evaluarDepresion()">Evaluar</button>
+        </form>
+        <div id="resultado">
+            <h3>Resultado:</h3>
+            <p id="texto-resultado"></p>
+            <p id="recomendacion"></p>
+        </div>
+    </section>
+
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <p>Col. Las Minitas, Edificio Millenium II, Tegucigalpa</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="form-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="redes-sociales">
+            <a href="https://wa.me/50487655578" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/plussaludhn" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/plussaludhn" target="_blank">Facebook</a>
+            <a href="mailto:plusalud.info@gmail.com">Correo</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plus Salud Integral. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
